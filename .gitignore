@@ -1,6 +1,5 @@
 dmenu
 dmenu.o
-config.h
 drw.o
 stest
 stest.o
