@@ -5,7 +5,7 @@ static int topbar = 1;                      /* -b  option; if 0, dmenu appears a
 static int fuzzy = 1;                      /* -F  option; if 0, dmenu doesn't use fuzzy matching     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Fira Mono:size=10"
+	"Input Mono:style=Regular:pixelsize=10:antialias=true"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char foreground[]      = "#D8DEE9";
@@ -29,8 +29,8 @@ static const char color15[]         = "#ECEFF4";
 static const char *colors[SchemeLast][2] = {
 	/*                        fg         bg       */
 	[SchemeNorm] =          { foreground, background },
-	[SchemeSel] =           { background, color4 },
-	[SchemeSelHighlight] =  { background, color12 },
+	[SchemeSel] =           { background, foreground },
+	[SchemeSelHighlight] =  { background, foreground },
 	[SchemeNormHighlight] = { foreground, background },
 	[SchemeOut] =           { background, foreground },
 };
